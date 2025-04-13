@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import { GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 
@@ -8,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Wilson Neto - Software Engineer",
-  description: "Software Engineer over the past 16 years, I've been working with different technologies and languages, but always with the same passion for building great products.",
+  description: "Personal blog of Wilson Neto, Senior Fullstack Software Engineer and Microsoft MVP, focused on software development, architecture, and cloud technologies.",
 };
 
 export default function RootLayout({
