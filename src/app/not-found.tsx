@@ -6,7 +6,7 @@ export default function NotFound() {
       <div className="max-w-xl mx-auto text-center">
         <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-4">404</h1>
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-          Página não encontrada
+          Página Não Encontrada
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
           Desculpe, não conseguimos encontrar a página que você está procurando.
@@ -15,7 +15,7 @@ export default function NotFound() {
           href="/"
           className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
         >
-          Voltar para a página inicial
+          Voltar para a Página Inicial
         </Link>
       </div>
     </div>

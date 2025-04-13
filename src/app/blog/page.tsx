@@ -5,16 +5,16 @@ import { Metadata } from 'next';
 import ArrowIcon from '@/components/ArrowIcon';
 
 export const metadata: Metadata = {
-  title: "Blog | Craft & Code Club",
-  description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
-  keywords: ["Blog", "Artigos", "Desenvolvimento de Software", "Engenharia de Software", "System Design", "Algoritmos", "DDD"],
+  title: "Blog | Wilson Neto",
+  description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
+  keywords: ["Blog", "Artigos", "Desenvolvimento de Software", "Engenharia de Software", "Design de Sistemas", "Arquitetura", "Nuvem", ".NET"],
   openGraph: {
-    title: "Blog | Craft & Code Club",
-    description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
+    title: "Blog | Wilson Neto",
+    description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
   },
   twitter: {
-    title: "Blog | Craft & Code Club",
-    description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
+    title: "Blog | Wilson Neto",
+    description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
   }
 };
 
@@ -27,7 +27,7 @@ export default function BlogPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Blog</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Artigos sobre artesanato de software, melhores práticas e aprendizados da comunidade.
+            Artigos sobre engenharia de software, boas práticas e insights da minha experiência profissional.
           </p>
         </header>
 

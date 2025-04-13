@@ -19,19 +19,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const topic = getTopicBySlug(resolvedParams.topic);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle} da comunidade Craft & Code Club.`;
-  const topicKeywords = [topicTitle, "Desenvolvimento de Software", "Desenvolvimento", "Software", "Aprendizado", "Comunidade", "Algoritmos", "Estruturas de Dados", "System Design", "DDD"];
+  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle}.`;
+  const topicKeywords = [topicTitle, "Desenvolvimento de Software", "Engenharia de Software", "Microsoft MVP", "Nuvem", "Arquitetura", ".NET", "Design de Sistemas"];
 
   return {
-    title: `${topicTitle} | Craft & Code Club`,
+    title: `${topicTitle} | Wilson Neto`,
     description: topicDescription,
     keywords: topicKeywords,
     openGraph: {
-      title: `${topicTitle} | Craft & Code Club`,
+      title: `${topicTitle} | Wilson Neto`,
       description: topicDescription,
     },
     twitter: {
-      title: `${topicTitle} | Craft & Code Club`,
+      title: `${topicTitle} | Wilson Neto`,
       description: topicDescription,
     }
   };
@@ -44,7 +44,7 @@ export default async function TopicPage({ params }: Props) {
   const allPosts = getSortedPostsData();
   const posts = allPosts.filter(post => post.topics.filter(filterTopic => filterTopic.key === topic.key).length > 0);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle} da comunidade Craft & Code Club.`;
+  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle}.`;
 
   return (
     <div className="bg-white dark:bg-gray-900 mb-20">
@@ -59,10 +59,10 @@ export default async function TopicPage({ params }: Props) {
         {posts.length === 0 ? (
           <div className="text-center py-12">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Ainda não temos artigos sobre {topicTitle.toLowerCase()}
+              Ainda não há artigos sobre {topicTitle.toLowerCase()}
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Estamos trabalhando para trazer conteúdo sobre este tópico em breve.
+              Estou trabalhando para trazer conteúdo sobre este tópico em breve.
             </p>
             <Link 
               href="/blog"

@@ -3,16 +3,16 @@ import { getSortedTopicList } from "@/lib/topics";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tópicos | Craft & Code Club",
-  description: "Explore nossos artigos e discussões sobre as melhores práticas de engenharia de software e os fundamentos da arte de programar. Veja os tópicos que abordamos abaixo.",
-  keywords: ["Tópicos", "Engenharia de Software", "System Design", "Algoritmos", "DDD", "Domain Driven Design", "Arquitetura de Software", "Desenvolvimento de Software", "Artesanato de Software"],
+  title: "Tópicos | Wilson Neto",
+  description: "Explore meus artigos e insights sobre boas práticas de engenharia de software, arquitetura, tecnologias em nuvem e desenvolvimento .NET. Navegue pelos tópicos que abordo abaixo.",
+  keywords: ["Tópicos", "Engenharia de Software", "Design de Sistemas", "Arquitetura", "Computação em Nuvem", "Desenvolvimento de Software", ".NET", "Microsoft MVP"],
   openGraph: {
-    title: "Tópicos | Craft & Code Club",
-    description: "Explore nossos artigos e discussões sobre as melhores práticas de engenharia de software e os fundamentos da arte de programar. Veja os tópicos que abordamos abaixo.",
+    title: "Tópicos | Wilson Neto",
+    description: "Explore meus artigos e insights sobre boas práticas de engenharia de software, arquitetura, tecnologias em nuvem e desenvolvimento .NET. Navegue pelos tópicos que abordo abaixo.",
   },
   twitter: {
-    title: "Tópicos | Craft & Code Club",
-    description: "Explore nossos artigos e discussões sobre as melhores práticas de engenharia de software e os fundamentos da arte de programar. Veja os tópicos que abordamos abaixo.",
+    title: "Tópicos | Wilson Neto",
+    description: "Explore meus artigos e insights sobre boas práticas de engenharia de software, arquitetura, tecnologias em nuvem e desenvolvimento .NET. Navegue pelos tópicos que abordo abaixo.",
   }
 };
 
@@ -25,7 +25,7 @@ export default function TopicsPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Tópicos</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Explore nossos artigos e discussões sobre as melhores práticas de engenharia de software e os fundamentos da arte de programar. Veja os tópicos que abordamos abaixo.
+            Explore meus artigos e insights sobre boas práticas de engenharia de software, arquitetura, tecnologias em nuvem e desenvolvimento profissional. Navegue pelos tópicos que abordo abaixo.
           </p>
         </header>
 
