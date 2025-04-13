@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const topic = getTopicBySlug(resolvedParams.topic);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Articles and resources about ${topicTitle} from Wilson Neto's blog.`;
+  const topicDescription = topic.description ?? `Articles and resources about ${topicTitle}.`;
   const topicKeywords = [topicTitle, "Software Development", "Software Engineering", "Microsoft MVP", "Cloud", "Architecture", ".NET", "System Design"];
 
   return {
@@ -62,7 +62,7 @@ export default async function TopicPage({ params }: Props) {
               No articles about {topicTitle.toLowerCase()} yet
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              I'm working on bringing content about this topic soon.
+              I&apos;m working on bringing content about this topic soon.
             </p>
             <Link 
               href="/blog"

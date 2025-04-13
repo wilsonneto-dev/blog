@@ -17,7 +17,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              Welcome to <span className="text-blue-600 dark:text-blue-400">Wilson Neto's Blog</span>
+              Welcome to <span className="text-blue-600 dark:text-blue-400">Wilson Neto&apos;s Blog</span>
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 sm:mt-4">
               Software Engineer with over {(new Date().getFullYear()) - 2010} years of experience, Microsoft MVP, focusing on modern software development technologies and cloud platforms.

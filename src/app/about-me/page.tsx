@@ -15,7 +15,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Professional Experience</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              I bring deep expertise in system and solution design, cloud-native architecture, and the development of highly scalable distributed systems. Over the years, I've led cross-functional teams on global-scale projects across the USA, Europe, and Brazil, combining strong technical leadership with hands-on experience in modern software engineering practices. I specialize in building robust microservices and event-driven architectures using mainly .Net and C#.
+              I bring deep expertise in system and solution design, cloud-native architecture, and the development of highly scalable distributed systems. Over the years, I&apos;ve led cross-functional teams on global-scale projects across the USA, Europe, and Brazil, combining strong technical leadership with hands-on experience in modern software engineering practices. I specialize in building robust microservices and event-driven architectures using mainly .Net and C#.
               <br />
               <br />
             </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <br /><br />
               <strong>Academic background:</strong>
               <br />
-              Bachelor's Degree in Computer Science from UNORP São José do Rio Preto, Brazil
+              Bachelor&apos;s Degree in Computer Science from UNORP São José do Rio Preto, Brazil
               <br />
               MBA in Software and Solution Architecture from IGTI, Brazil
               <br />
