@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wilson Neto - Software Engineer",
-  description: "Personal blog of Wilson Neto, Senior Fullstack Software Engineer and Microsoft MVP, focused on software development, architecture, and cloud technologies.",
+  title: "Wilson Neto - Engenheiro de Software",
+  description: "Blog pessoal de Wilson Neto, Engenheiro de Software Fullstack Sênior e Microsoft MVP, focado em desenvolvimento de software, arquitetura e tecnologias em nuvem.",
 };
 
 export default function RootLayout({
@@ -29,12 +29,12 @@ export default function RootLayout({
                       <span className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors leading-tight">
                         Wilson Neto
                       </span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">Software Engineering</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">Engenharia de Software</span>
                     </div>
                   </Link>
                   
                   <label htmlFor="mobile-menu" className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                    <span className="sr-only">Open menu</span>
+                    <span className="sr-only">Abrir menu</span>
                     <svg
                       className="h-6 w-6"
                       fill="none"
@@ -68,29 +68,29 @@ export default function RootLayout({
 
                 <input type="checkbox" id="mobile-menu" className="hidden peer" />
                 
-                {/* Mobile Menu */}
+                {/* Menu móvel */}
                 <div className="hidden peer-checked:block border-t border-gray-200 dark:border-gray-700">
                   <div className="flex flex-col space-y-4 px-2 py-4">
                     <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Blog</Link>
-                    <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">About Me</Link>
+                    <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Sobre Mim</Link>
                   </div>
                 </div>
               </div>
 
-              {/* Desktop Header */}
+              {/* Cabeçalho desktop */}
               <div className="hidden md:flex items-center justify-between h-20">
                 <Link href="/" className="flex items-center space-x-3">
                   <div className="flex flex-col">
                     <span className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors leading-tight">
                       Wilson Neto
                     </span>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">Software Engineering</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">Engenharia de Software</span>
                   </div>
                 </Link>
 
                 <div className="flex items-center space-x-8">
                   <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Blog</Link>
-                  <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">About Me</Link>
+                  <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Sobre Mim</Link>
 
                   <div className="flex items-center space-x-4">
                     <a href="https://www.youtube.com/@wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
@@ -126,7 +126,7 @@ export default function RootLayout({
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Wilson Neto</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Senior Fullstack Software Engineer, Microsoft MVP, focusing on modern software engineering practices and technologies.</p>
+                  <p className="text-gray-600 dark:text-gray-300">Engenheiro de Software Fullstack Sênior, Microsoft MVP, com foco em práticas modernas de engenharia de software e tecnologias.</p>
                   <div className="mt-4 flex space-x-4">
                     <a href="https://github.com/wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
                       <span className="sr-only">GitHub</span>
@@ -149,44 +149,44 @@ export default function RootLayout({
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">About Me</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Sobre Mim</h3>
                   <ul className="space-y-3">
                     <li>
-                      <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog Posts</Link>
+                      <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Postagens do Blog</Link>
                     </li>
                     <li>
-                      <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Me</Link>
+                      <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre Mim</Link>
                     </li>
                     <li>
-                      <Link href="/topics/test-driven-development" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Test-Driven Development</Link>
+                      <Link href="/topics/test-driven-development" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Desenvolvimento Guiado por Testes</Link>
                     </li>
                     <li>
-                      <Link href="/topics/microservices" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Microservices</Link>
+                      <Link href="/topics/microservices" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Microsserviços</Link>
                     </li>
                     <li>
-                      <Link href="/topics/dotnet" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">.NET Development</Link>
+                      <Link href="/topics/dotnet" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Desenvolvimento .NET</Link>
                     </li>
                     <li>
-                      <Link href="/topics" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">All Topics</Link>
+                      <Link href="/topics" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Todos os Tópicos</Link>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Conecte-se</h3>
                   <ul className="space-y-3">
                     <li>
                       <a href="https://www.youtube.com/@wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        YouTube Channel
+                        Canal do YouTube
                       </a>
                     </li>
                     <li>
                       <a href="https://github.com/wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        GitHub Projects
+                        Projetos no GitHub
                       </a>
                     </li>
                     <li>
                       <a href="https://www.linkedin.com/in/wilsonnetobr/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                        LinkedIn Profile
+                        Perfil no LinkedIn
                       </a>
                     </li>
                   </ul>
@@ -194,7 +194,7 @@ export default function RootLayout({
               </div>
               <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
-                  © {new Date().getFullYear()} Wilson Neto. All rights reserved.
+                  © {new Date().getFullYear()} Wilson Neto. Todos os direitos reservados.
                 </p>
               </div>
             </div>

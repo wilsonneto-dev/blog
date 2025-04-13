@@ -6,15 +6,15 @@ import ArrowIcon from '@/components/ArrowIcon';
 
 export const metadata: Metadata = {
   title: "Blog | Wilson Neto",
-  description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
-  keywords: ["Blog", "Articles", "Software Development", "Software Engineering", "System Design", "Architecture", "Cloud", ".NET"],
+  description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
+  keywords: ["Blog", "Artigos", "Desenvolvimento de Software", "Engenharia de Software", "Design de Sistemas", "Arquitetura", "Nuvem", ".NET"],
   openGraph: {
     title: "Blog | Wilson Neto",
-    description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
+    description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
   },
   twitter: {
     title: "Blog | Wilson Neto",
-    description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
+    description: "Artigos sobre engenharia de software, design de sistemas, arquitetura, tecnologias em nuvem e melhores práticas da minha experiência como engenheiro de software.",
   }
 };
 
@@ -27,7 +27,7 @@ export default function BlogPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Blog</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Articles about software engineering, best practices, and insights from my professional experience.
+            Artigos sobre engenharia de software, boas práticas e insights da minha experiência profissional.
           </p>
         </header>
 
@@ -37,7 +37,7 @@ export default function BlogPage() {
               <article key={post.id} className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US')}</time>
+                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('pt-BR')}</time>
                   </div>
                   <TopicTags topics={post.topics} />
                   <Link href={`/posts/${encodeURIComponent(post.id)}`}>
@@ -50,7 +50,7 @@ export default function BlogPage() {
                     href={`/posts/${encodeURIComponent(post.id)}`}
                     className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                   >
-                    Read more
+                    Ler mais
                     <ArrowIcon />
                   </Link>
                 </div>
