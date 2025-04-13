@@ -7,7 +7,6 @@ import remarkGfm from 'remark-gfm';
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
-import '../assets/code-stackoverflow-dark.css';
 import rehypeSlug from 'rehype-slug';
 import { getTopicsMetadataAsDictionary, Topic } from './topics';
 
