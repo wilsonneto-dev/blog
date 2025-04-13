@@ -44,7 +44,7 @@ export default async function TopicPage({ params }: Props) {
   const allPosts = getSortedPostsData();
   const posts = allPosts.filter(post => post.topics.filter(filterTopic => filterTopic.key === topic.key).length > 0);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle} do blog de Wilson Neto.`;
+  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle}.`;
 
   return (
     <div className="bg-white dark:bg-gray-900 mb-20">
