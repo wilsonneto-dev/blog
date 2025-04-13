@@ -1,7 +1,7 @@
 ---
-name: "Test-Driven Development"
+name: "Desenvolvimento Guiado por Testes"
 key: "test-driven-development"
-description: "Practice TDD to create robust and maintainable code."
+description: "Pratique TDD para criar código robusto e de fácil manutenção."
 featured: true
 order: 1
 --- 

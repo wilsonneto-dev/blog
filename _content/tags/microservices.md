@@ -1,7 +1,7 @@
 ---
-name: "Microservices"
+name: "Microsserviços"
 key: "microservices"
-description: "Microservices architecture and design patterns."
+description: "Arquitetura de microsserviços e padrões de design."
 featured: true
 order: 2
 ---
