@@ -80,13 +80,13 @@ export default async function Post({ params }: Props) {
         </div>
       </article>
       
-      {/* Featured Topics */}
+      {/* Tópicos Relacionados */}
       <div className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Explore Related Topics</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Explore Tópicos Relacionados</h2>
             <p className="mt-4 max-w-2xl text-xl text-gray-600 dark:text-gray-300 lg:mx-auto">
-              Check out these topics for more articles and insights on software engineering.
+              Confira os tópicos abaixo para mais artigos e insights sobre engenharia de software.
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default async function Post({ params }: Props) {
               href="/blog"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
             >
-              View all articles
+              Ver todos os artigos
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
