@@ -1,8 +1,0 @@
-services:
-  c3-website:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 8080:80
-    container_name: c3-website
