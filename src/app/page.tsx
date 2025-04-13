@@ -5,6 +5,7 @@ import escapeHtml from 'escape-html';
 import { getFeaturedTopicsSorted } from '@/lib/topics';
 import TopicCard from '@/components/TopicCard';
 import ArrowIcon from '@/components/ArrowIcon';
+
 export default function Home() {
   const posts = getSortedPostsData();
   const featuredTopics = getFeaturedTopicsSorted();
@@ -16,10 +17,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              Welcome to my blog
+              Welcome to <span className="text-blue-600 dark:text-blue-400">Wilson Neto's Blog</span>
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 sm:mt-4">
-              Software Engineer with over {(new Date().getFullYear()) -2010} years of experience, Microsoft MVP, focusing on modern software engineering practices and technologies.
+              Software Engineer with over {(new Date().getFullYear()) - 2010} years of experience, Microsoft MVP, focusing on modern software development technologies and cloud platforms.
             </p>
             <div className="mt-8 flex justify-center space-x-4">
               <a href="https://www.youtube.com/@wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors">

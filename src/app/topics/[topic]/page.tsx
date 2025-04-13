@@ -19,19 +19,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const topic = getTopicBySlug(resolvedParams.topic);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle} da comunidade Craft & Code Club.`;
-  const topicKeywords = [topicTitle, "Desenvolvimento de Software", "Desenvolvimento", "Software", "Aprendizado", "Comunidade", "Algoritmos", "Estruturas de Dados", "System Design", "DDD"];
+  const topicDescription = topic.description ?? `Articles and resources about ${topicTitle} from Wilson Neto's blog.`;
+  const topicKeywords = [topicTitle, "Software Development", "Software Engineering", "Microsoft MVP", "Cloud", "Architecture", ".NET", "System Design"];
 
   return {
-    title: `${topicTitle} | Craft & Code Club`,
+    title: `${topicTitle} | Wilson Neto`,
     description: topicDescription,
     keywords: topicKeywords,
     openGraph: {
-      title: `${topicTitle} | Craft & Code Club`,
+      title: `${topicTitle} | Wilson Neto`,
       description: topicDescription,
     },
     twitter: {
-      title: `${topicTitle} | Craft & Code Club`,
+      title: `${topicTitle} | Wilson Neto`,
       description: topicDescription,
     }
   };
@@ -44,7 +44,7 @@ export default async function TopicPage({ params }: Props) {
   const allPosts = getSortedPostsData();
   const posts = allPosts.filter(post => post.topics.filter(filterTopic => filterTopic.key === topic.key).length > 0);
   const topicTitle = topic.name;
-  const topicDescription = topic.description ?? `Artigos e recursos sobre ${topicTitle} da comunidade Craft & Code Club.`;
+  const topicDescription = topic.description ?? `Articles and resources about ${topicTitle} from Wilson Neto's blog.`;
 
   return (
     <div className="bg-white dark:bg-gray-900 mb-20">
@@ -59,16 +59,16 @@ export default async function TopicPage({ params }: Props) {
         {posts.length === 0 ? (
           <div className="text-center py-12">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Ainda não temos artigos sobre {topicTitle.toLowerCase()}
+              No articles about {topicTitle.toLowerCase()} yet
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Estamos trabalhando para trazer conteúdo sobre este tópico em breve.
+              I'm working on bringing content about this topic soon.
             </p>
             <Link 
               href="/blog"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
             >
-              Ver todos os artigos
+              View all articles
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -81,7 +81,7 @@ export default async function TopicPage({ params }: Props) {
                 <article key={post.id} className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('pt-BR')}</time>
+                      <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US')}</time>
                     </div>
                     <TopicTags topics={post.topics} />
                     <Link href={`/posts/${escapeHtml(post.id)}`}>
@@ -94,7 +94,7 @@ export default async function TopicPage({ params }: Props) {
                       href={`/posts/${escapeHtml(post.id)}`}
                       className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                     >
-                      Ler mais
+                      Read more
                       <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>

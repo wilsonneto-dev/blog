@@ -5,16 +5,16 @@ import { Metadata } from 'next';
 import ArrowIcon from '@/components/ArrowIcon';
 
 export const metadata: Metadata = {
-  title: "Blog | Craft & Code Club",
-  description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
-  keywords: ["Blog", "Artigos", "Desenvolvimento de Software", "Engenharia de Software", "System Design", "Algoritmos", "DDD"],
+  title: "Blog | Wilson Neto",
+  description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
+  keywords: ["Blog", "Articles", "Software Development", "Software Engineering", "System Design", "Architecture", "Cloud", ".NET"],
   openGraph: {
-    title: "Blog | Craft & Code Club",
-    description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
+    title: "Blog | Wilson Neto",
+    description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
   },
   twitter: {
-    title: "Blog | Craft & Code Club",
-    description: "Artigos sobre engenharia de software, System Design, Algoritmos, Estruturas de dados, DDD, melhores práticas e aprendizados da comunidade.",
+    title: "Blog | Wilson Neto",
+    description: "Articles about software engineering, system design, architecture, cloud technologies, and best practices from my experience as a software engineer.",
   }
 };
 
@@ -27,7 +27,7 @@ export default function BlogPage() {
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Blog</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Artigos sobre artesanato de software, melhores práticas e aprendizados da comunidade.
+            Articles about software engineering, best practices, and insights from my professional experience.
           </p>
         </header>
 
@@ -37,7 +37,7 @@ export default function BlogPage() {
               <article key={post.id} className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-3">
-                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('pt-BR')}</time>
+                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US')}</time>
                   </div>
                   <TopicTags topics={post.topics} />
                   <Link href={`/posts/${encodeURIComponent(post.id)}`}>
@@ -50,7 +50,7 @@ export default function BlogPage() {
                     href={`/posts/${encodeURIComponent(post.id)}`}
                     className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                   >
-                    Ler mais
+                    Read more
                     <ArrowIcon />
                   </Link>
                 </div>

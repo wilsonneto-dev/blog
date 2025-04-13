@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPostData(resolvedParams.id);
   
   return {
-    title: `${post.title} | Craft & Code Club`,
+    title: `${post.title} | Wilson Neto`,
     description: post.description,
-    keywords: [...post.topics.map(topic => topic.name), "Blog", "Artigo", "Desenvolvimento de Software", "Aprendizado", "Comunidade", "Algoritmos", "Estruturas de Dados", "System Design", "DDD"],
+    keywords: [...post.topics.map(topic => topic.name), "Blog", "Article", "Software Development", "Software Engineering", "Cloud", "Architecture", ".NET", "Microsoft MVP"],
     openGraph: {
-      title: `${post.title} | Craft & Code Club`,
+      title: `${post.title} | Wilson Neto`,
       description: post.description,
       type: 'article',
       publishedTime: post.date,
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       tags: post.topics.map(topic => topic.name),
     },
     twitter: {
-      title: `${post.title} | Craft & Code Club`,
+      title: `${post.title} | Wilson Neto`,
       description: post.description
     }
   };
@@ -46,7 +46,7 @@ export default async function Post({ params }: Props) {
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{post.title}</h1>
         <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4">
-          <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('pt-BR')}</time>
+          <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-US')}</time>
           {authors.length > 0 && (
             <>
               <span className="mx-2">•</span>
@@ -72,7 +72,7 @@ export default async function Post({ params }: Props) {
       
       {authors.length > 0 && (
         <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Sobre os Autores</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About the Authors</h2>
           <div className="flex flex-col space-y-4">
             {authors.map((author, index) => (
               <div key={index} className="flex items-center space-x-3">
