@@ -4,10 +4,10 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About Wilson Neto
+            About me
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Senior Fullstack Software Engineer, Microsoft MVP, based in São Paulo, Brazil, focused on modern software development technologies and cloud platforms.
+            Software Engineer with over {(new Date().getFullYear()) - 2010} years of experience, Microsoft MVP, focusing on modern software engineering practices and technologies.
           </p>
         </header>
 
@@ -15,25 +15,28 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Professional Experience</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              I am experienced in system and solution design and architecture, highly scalable distributed systems, global-scale projects, and agile methodologies, including Scrum and SAFe, at large companies. 
-              Proficient in Test-Driven Development, Cloud Native Applications, DevOps best practices, and creating technical design documentation.
+              I bring deep expertise in system and solution design, cloud-native architecture, and the development of highly scalable distributed systems. Over the years, I've led cross-functional teams on global-scale projects across the USA, Europe, and Brazil, combining strong technical leadership with hands-on experience in modern software engineering practices. I specialize in building robust microservices and event-driven architectures using mainly .Net and C#.
               <br />
               <br />
-            </p>
-            <p className="text-gray-600 dark:text-gray-300">
-              I have been working as a software engineer since 2010, providing valuable, scalable, and maintainable software solutions.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Skills & Expertise</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-              <li>Programming with C#, JavaScript, TypeScript, Python</li>
-              <li>Frameworks such as .NET, Fast API, React.js, and Next.js</li>
+              <li>Technical Leadership, leading teams and projects</li>
+              <li>Teaching and mentoring</li>
+              <li>Strong programming skills, mainly with .Net and C#</li>
               <li>Cloud environments: Azure, AWS</li>
               <li>Containers, Docker, and Kubernetes</li>
               <li>Microservices architecture</li>
+              <li>Event-Driven Architecture</li>
               <li>Test-Driven Development</li>
+              <li>DevOps and CI/CD</li>
+              <li>Agile methodologies</li>
+              <li>Cloud Native Applications and Architecture</li>
+              <li>System and Solution Design</li>
+              <li>Technical Design Documentation</li>
             </ul>
           </section>
 
@@ -44,9 +47,12 @@ export default function AboutPage() {
               <br /><br />
               <strong>Academic background:</strong>
               <br />
-              Bachelor's Degree in Computer Science from UNORP São José do Rio Preto
+              Bachelor's Degree in Computer Science from UNORP São José do Rio Preto, Brazil
               <br />
-              MBA in Software and Solution Architecture from IGTI (currently enrolled)
+              MBA in Software and Solution Architecture from IGTI, Brazil
+              <br />
+              <br />
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

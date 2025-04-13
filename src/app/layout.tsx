@@ -72,7 +72,7 @@ export default function RootLayout({
                 {/* Mobile Menu */}
                 <div className="hidden peer-checked:block border-t border-gray-200 dark:border-gray-700">
                   <div className="flex flex-col space-y-4 px-2 py-4">
-                    <Link href="/posts" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Posts</Link>
+                    <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Posts</Link>
                     <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">About Me</Link>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default function RootLayout({
                 </Link>
 
                 <div className="flex items-center space-x-8">
-                  <Link href="/posts" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Posts</Link>
+                  <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">Posts</Link>
                   <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">About Me</Link>
 
                   <div className="flex items-center space-x-4">
@@ -153,7 +153,7 @@ export default function RootLayout({
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">About Me</h3>
                   <ul className="space-y-3">
                     <li>
-                      <Link href="/posts" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog Posts</Link>
+                      <Link href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog Posts</Link>
                     </li>
                     <li>
                       <Link href="/about-me" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Me</Link>

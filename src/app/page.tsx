@@ -19,7 +19,7 @@ export default function Home() {
               Welcome to my blog
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 sm:mt-4">
-              Software Engineer with over 16 years of experience, Microsoft MVP, focusing on modern software engineering practices and technologies.
+              Software Engineer with over {(new Date().getFullYear()) -2010} years of experience, Microsoft MVP, focusing on modern software engineering practices and technologies.
             </p>
             <div className="mt-8 flex justify-center space-x-4">
               <a href="https://www.youtube.com/@wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors">
