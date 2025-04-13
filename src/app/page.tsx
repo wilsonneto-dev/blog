@@ -17,10 +17,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              Bem-vindo ao <span className="text-blue-600 dark:text-blue-400">Blog do Wilson Neto</span>
+              Bem-vindo ao meu blog
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 sm:mt-4">
-              Engenheiro de Software com mais de {(new Date().getFullYear()) - 2010} anos de experiência, Microsoft MVP, focado em tecnologias modernas de desenvolvimento de software e plataformas em nuvem.
+              Sou Wilson Neto, Engenheiro de Software com mais de {(new Date().getFullYear()) - 2010} anos de experiência, Microsoft MVP, focado em tecnologias modernas de desenvolvimento de software e plataformas em nuvem.
             </p>
             <div className="mt-8 flex justify-center space-x-4">
               <a href="https://www.youtube.com/@wilsonneto-dev" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors">
