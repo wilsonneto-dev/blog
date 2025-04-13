@@ -75,13 +75,13 @@ export default async function Post({ params }: Props) {
             ))}
           </div>
         </header>
-        <div className="prose dark:prose-dark prose-lg max-w-none">
+        <div className="prose dark:prose-dark prose-lg max-w-none border-b border-gray-200 dark:border-gray-700 pb-12">
           <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
         </div>
       </article>
       
       {/* Featured Topics */}
-      <div className="py-12 border-t border-gray-200 dark:border-gray-700">
+      <div className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Explore Related Topics</h2>
